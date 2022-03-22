@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+</head>
+<body>
+    <form style="text-align: center; margin-top: 50px;" >
+         <div>
+             <label for="name" style="padding-right: 120px;">Name:</label><br>
+           <input type="text" style="padding-left: px;" id="names" onmouseenter="ValidateName();"><br>
+             <span id="nameError" style="color: red;"></span>
+        </div>
+
+        <div>
+            <label for="email" style="padding-right: 120px;">Email:</label><br>
+   <input type="text" id="txtEmail"  onkeyup="ValidateEmail();"/><br>
+<span id="lblError" style="color: red"></span>
+</div>
+
+<div>
+    <label for="age" style="padding-right: 120px;">Age:</label> <br>
+    <input type="number" id="age" min="-99" max="99" onclick="ValidateAge();" aria-disabled="false" style="padding-right:100px ;"> <br>
+    <span id="ageError" style="color: red"></span>
+</div><br>
+
+<div>
+    <label for="website" style="padding-right: 110px;">Website:</label><br>
+     <input type="text" id="website"><br>
+     <label for="intro" style="padding-right: 100px;">Introduction:</label>
+    <br> <input type="text" id="introduction"> 
+</div><br>
+<button type="submit" style="background-color: deepskyblue; color: white;">Submit</button>
+
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
